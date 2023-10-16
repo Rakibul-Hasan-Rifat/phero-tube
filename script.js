@@ -1,6 +1,5 @@
 const categoryBtnContainer = document.querySelector('main .buttons');
 const productContainer = document.querySelector('main .product_container');
-let allData;
 
 
 (() => {
@@ -22,7 +21,6 @@ const productCategoryHandler = (productTypeId = '1000') => {
         .then(res => res.json())
         .then(data => {
             if (data.data.length > 0) {
-                allData = data.data
                 data.data.forEach((singleProductCategory => {
                     cardCreator(singleProductCategory)
                 }))
