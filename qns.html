@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero Tube | Q & A</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            transition: all 500ms;
+        }
+
+        body {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 35px 15px;
+            background-color: #d1d1d1;
+        }
+
+        main {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        main div {
+            padding: 35px 15px;
+            /* border: 1px solid yellow; */
+            color: #fff;
+            background-color: #484848;
+            text-align: justify;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px 1px rgba(73, 68, 68, 0.793);
+        }
+
+        main div:nth-child(2) {
+            margin: 16px 0;
+        }
+
+        main div h4 {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h4 class="qn">The scope of var, let, and const</h4>
+            <p class="ans">
+                In JavaScript, 'var', 'let', and 'const' are used to declare variables. The scope of a variable refers to the part of the program where the variable is accessible. <br>
+                'var' declarations are globally scoped or function/locally scoped. A variable declared with 'var' outside a function block is available for use in the whole window, while it is available and can be accessed only within that function when declared within a function. <br>
+                'let' and 'const' are block-scoped, meaning they are only accessible within the block they are defined in. A variable declared with 'let' can be updated but not re-declared, while a variable declared with 'const'
+                cannot be updated or re-declared.
+            </p>
+        </div>
+        <div>
+            <h4 class="qn">The use cases of null and undefined</h4>
+            <p class="ans">
+                In JavaScript, 'null' and 'undefined' are two distinct types with different use cases. <br>
+                undefined is a type that represents a variable that has been declared but has not been assigned a value. It can also be used to indicate that a variable does not exist. <br>
+                On the other hand, null is an assignment value that can be assigned to a variable as a representation of
+                no value. It is often used to indicate that an object does not exist or that a variable has no value.
+            </p>
+        </div>
+        <div>
+            <h4 class="qn">What do you mean by REST API?</h4>
+            <p class="ans">
+                A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style. It is a set of rules that define how applications or devices can connect to and communicate with each other. REST APIs are sometimes referred to as RESTful APIs
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

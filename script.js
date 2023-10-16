@@ -31,6 +31,10 @@ const productCategoryHandler = (productTypeId = '1000') => {
 };
 productCategoryHandler();
 
+document.getElementById('blog_btn').addEventListener('click', (e) => {
+    location.href = './qns.html'
+})
+
 categoryBtnContainer.addEventListener('click', (e) => {
     if (e.target.tagName === 'BUTTON') {
         productContainer.innerHTML = '';
@@ -80,14 +84,12 @@ function gridTemplateColumnsHandler() {
     }
 }
 
-function msToHumanReadableTime(ms) {
-    let secs = Math.floor((ms / 1000) % 60)
-    let mins = Math.floor((ms / (1000 * 60)) % 60);
-    let hrs = Math.floor((ms / (1000 * 60 * 60)) % 24);
-    let days = Math.floor(ms / (1000 * 60 * 60 * 24));
+function msToHumanReadableTime(seconds) {
+    let mins = Math.floor((seconds / 60) % 60);
+    let hrs = Math.floor((seconds / (60 * 60)) % 24);
+    let days = Math.floor(seconds / (1000 * 60 * 60 * 24));
     days >= 1 ? days = `${days} days` : days = '';
     hrs >= 1 ? hrs = `${hrs} hrs` : hrs = '';
     mins >= 1 ? mins = `${mins} mins` : mins = '';
-    secs >= 1 ? secs = `${secs} seconds` : secs = '';
-    return `${days} ${hrs} ${mins} ${secs} ago`;
+    return `${days} ${hrs} ${mins} ago`;
 }
