@@ -45,7 +45,6 @@ categoryBtnContainer.addEventListener('click', (e) => {
 function cardCreator(singleProduct) {
     const postedTime = singleProduct.others.posted_date ? `<small>${msToHumanReadableTime(singleProduct.others.posted_date)}</small>` : '';
     const verifiedSymbol = singleProduct.authors[0].verified ? "<img src='./images/tick.png' />" : '';
-    console.log(postedTime, singleProduct.others.posted_date)
     productContainer.innerHTML += `
         <div>
             <div class='card_banner'>
